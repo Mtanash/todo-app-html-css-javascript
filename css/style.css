@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+}
+
+header {
+  min-height: 100px;
+  background-color: indigo;
+  color: #fff;
+}
+
+header h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  margin: auto;
+  max-width: 800px;
+  border: 1px solid lightgrey;
+  padding: 25px;
+  margin-top: 150px;
+}
+
+.content .title {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.content .input-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.content .input-bar input[type="text"] {
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.content .input-bar input[type="text"]:focus {
+  outline: none;
+}
+
+.content .input-bar .btn {
+  background-color: teal;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.todos {
+  margin-top: 50px;
+}
+
+.todos .todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.todos .todo input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.todos .todo .todo-text {
+  flex-grow: 1;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.todos .todo .btn {
+  color: crimson;
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+.finished {
+  text-decoration: line-through;
+}
